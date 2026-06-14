@@ -5,7 +5,7 @@ const Header = () => {
       
       <div>
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="Craving"
           className="h-12 object-contain"
         />
@@ -20,7 +20,7 @@ const Header = () => {
           Register
         </button>
       </div>
-
+ 
     </header>
   );
 };
