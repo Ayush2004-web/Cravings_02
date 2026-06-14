@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Header from "./Components/Header"
 import Register from "./Pages/Register"
+import Footer from "./Components/Footer"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/footer" element={<Footer />} />
         <Route path="./register" element={<Register/>}/>
       </Routes>
     </BrowserRouter>

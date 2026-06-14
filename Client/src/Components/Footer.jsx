@@ -1,4 +1,4 @@
-import logo from "../assets/logo.webp"; // Replace with your logo path
+import logo from "../assets/Images/logo.png"; // Replace with your logo path
 
 function Footer() {
   return (
