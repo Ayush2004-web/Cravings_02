@@ -55,7 +55,7 @@ const Login = () => {
           <div className="flex justify-between items-center mb-6">
             <label className="flex items-center gap-2 text-gray-600">
               <input type="checkbox" />
-              Remember me
+              Remember Me
             </label>
 
             <button className="text-[#bf4308] hover:underline">
@@ -77,7 +77,7 @@ const Login = () => {
             <div className="flex-1 border-t"></div>
           </div>
 
-          {/* Create Account */}
+         
           <button className="w-full text-[#bf4308] font-semibold hover:underline">
             Create an account
           </button>

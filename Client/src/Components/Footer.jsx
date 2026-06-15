@@ -1,4 +1,4 @@
-import logo from "../assets/Images/logo.png"; // Replace with your logo path
+import logo from "../assets/Images/logo.png"; 
 
 function Footer() {
   return (
@@ -13,7 +13,6 @@ function Footer() {
           restaurants and riders. ---
         </p>
 
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
           {/* Logo */}
           <div>
@@ -24,7 +23,6 @@ function Footer() {
             />
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-3xl font-semibold mb-5">Quick Links</h3>
 
@@ -37,7 +35,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Restaurants */}
           <div>
             <h3 className="text-3xl font-semibold mb-5">
               For Restaurants
@@ -53,7 +50,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Riders */}
+        
           <div>
             <h3 className="text-3xl font-semibold mb-5">
               For Riders
@@ -69,7 +66,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
+      
           <div>
             <h3 className="text-3xl font-semibold mb-5">
               Feedback & Support
@@ -89,10 +86,8 @@ function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
         <hr className="border-gray-400 my-10" />
 
-        {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-5">
           <p className="text-lg">
             © 2026 Cravings. All rights reserved.

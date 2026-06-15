@@ -35,7 +35,7 @@ function Home() {
           </h1>
 
           <p className="mt-6 text-2xl">
-            Order from thousands of restaurants
+            Order From Thousands Of Resturant
           </p>
 
           <div className="mt-8 flex justify-center gap-4">
