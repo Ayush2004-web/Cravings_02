@@ -1,112 +1,107 @@
-import logo from "../assets/Images/logo.png"; 
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#3f4049] text-white">
-      {/* Top Border */}
-      <div className="h-1 bg-orange-700"></div>
-
+    <footer className="bg-[#3f404a] text-white mt-0">
       <div className="max-w-7xl mx-auto px-4 py-10">
+
         {/* Tagline */}
-        <p className="text-center text-lg mb-12">
+        <div className="text-center mb-10 text-lg">
           --- Your favorite food delivery platform connecting customers with
           restaurants and riders. ---
-        </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
+        {/* Main Footer */}
+        <div className="grid md:grid-cols-5 gap-10">
+
           {/* Logo */}
           <div>
             <img
               src={logo}
-              alt="Craving Logo"
-              className="w-36 h-36 rounded-full bg-white p-2"
+              alt="Cravings"
+              className="w-28 h-28 rounded-full bg-white p-2"
             />
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h3 className="text-3xl font-semibold mb-5">Quick Links</h3>
+            <h2 className="text-3xl font-semibold mb-5">
+              Quick Links
+            </h2>
 
             <ul className="space-y-3 text-lg">
-              <li className="cursor-pointer hover:text-orange-400">Home</li>
-              <li className="cursor-pointer hover:text-orange-400">About</li>
-              <li className="cursor-pointer hover:text-orange-400">
-                Order Now
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+
+              <li>
+                <Link to="/restaurants">Order Now</Link>
               </li>
             </ul>
           </div>
 
+          {/* Restaurants */}
           <div>
-            <h3 className="text-3xl font-semibold mb-5">
+            <h2 className="text-3xl font-semibold mb-5">
               For Restaurants
-            </h3>
+            </h2>
 
             <ul className="space-y-3 text-lg">
-              <li className="cursor-pointer hover:text-orange-400">
-                Partner With Us
-              </li>
-              <li className="cursor-pointer hover:text-orange-400">
-                Restaurant Dashboard
-              </li>
+              <li>Partner With Us</li>
+              <li>Restaurant Dashboard</li>
             </ul>
           </div>
 
-        
+          {/* Riders */}
           <div>
-            <h3 className="text-3xl font-semibold mb-5">
+            <h2 className="text-3xl font-semibold mb-5">
               For Riders
-            </h3>
+            </h2>
 
             <ul className="space-y-3 text-lg">
-              <li className="cursor-pointer hover:text-orange-400">
-                Become a Rider
-              </li>
-              <li className="cursor-pointer hover:text-orange-400">
-                Rider Dashboard
-              </li>
+              <li>Become a Rider</li>
+              <li>Rider Dashboard</li>
             </ul>
           </div>
 
-      
+          {/* Support */}
           <div>
-            <h3 className="text-3xl font-semibold mb-5">
+            <h2 className="text-3xl font-semibold mb-5">
               Feedback & Support
-            </h3>
+            </h2>
 
             <ul className="space-y-3 text-lg">
-              <li className="cursor-pointer hover:text-orange-400">
-                Submit Feedback
-              </li>
-              <li className="cursor-pointer hover:text-orange-400">
-                Help Center
-              </li>
-              <li className="cursor-pointer hover:text-orange-400">
-                Contact Us
-              </li>
+              <li>Submit Feedback</li>
+              <li>Help Center</li>
+              <li>Contact Us</li>
             </ul>
           </div>
+
         </div>
 
-        <hr className="border-gray-400 my-10" />
+        {/* Divider */}
+        <hr className="my-10 border-gray-400" />
 
+        {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-5">
+
           <p className="text-lg">
             © 2026 Cravings. All rights reserved.
           </p>
 
           <div className="flex gap-8 text-lg">
-            <a href="#" className="hover:text-orange-400">
-              Privacy Policy
-            </a>
-
-            <a href="#" className="hover:text-orange-400">
-              Terms of Service
-            </a>
-
-            <a href="#" className="hover:text-orange-400">
-              Site Map
-            </a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Site Map</a>
           </div>
+
         </div>
+
       </div>
     </footer>
   );

@@ -1,109 +1,129 @@
-import React from "react";
-import bgImage from "../assets/Images/RegisterBg.png";
+import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import bgImage from "../assets/images/register-bg.jpg";
 
 function Register() {
   return (
-    <div
-      className="min-h-screen bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-      }}
-    >
-      {/* Navbar */}
-      <nav className="bg-orange-700 flex justify-between items-center px-14 py-4">
-        <h1 className="text-white text-3xl font-bold">craving</h1>
+    <>
+      <Header />
 
-        <div className="flex gap-4">
-          <button className="text-white">Login</button>
+      <section
+        className="min-h-screen bg-cover bg-center flex items-center justify-end px-4 md:px-16 py-10"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+        }}
+      >
+        <div className="bg-white w-full max-w-md rounded-xl shadow-2xl p-8">
 
-          <button className="bg-white text-orange-700 px-5 py-2 rounded">
-            Register
-          </button>
-        </div>
-      </nav>
-
-      {/* Register Card */}
-      <div className="flex justify-end items-center min-h-[90vh] pr-20">
-        <div className="bg-white w-[450px] p-10 rounded-lg shadow-xl">
-          <h1 className="text-5xl font-bold text-orange-700 text-center">
+          <h1 className="text-5xl font-bold text-center text-[#C84A12] mb-4">
             Create Account
           </h1>
 
-          <p className="text-center text-gray-500 mt-3 mb-8">
+          <p className="text-center text-gray-500 mb-8">
             Join us as a Customer, Restaurant, or Rider
           </p>
 
-          <h3 className="font-semibold mb-4">Register as:</h3>
+          {/* User Type */}
+          <div className="mb-6">
+            <h3 className="font-semibold mb-4">Register as:</h3>
 
-          <div className="flex gap-5 mb-6">
-            <label>
-              <input type="radio" name="role" defaultChecked /> Customer
-            </label>
+            <div className="flex flex-wrap gap-6">
+              <label className="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="role"
+                  defaultChecked
+                />
+                Customer
+              </label>
 
-            <label>
-              <input type="radio" name="role" /> Restaurant
-            </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="role"
+                />
+                Restaurant
+              </label>
 
-            <label>
-              <input type="radio" name="role" /> Rider
-            </label>
+              <label className="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="role"
+                />
+                Rider
+              </label>
+            </div>
           </div>
 
-          <div className="space-y-4">
+          {/* Form */}
+          <form className="space-y-4">
+
             <input
               type="text"
               placeholder="Enter your full name"
-              className="w-full border rounded px-4 py-3"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none focus:border-[#C84A12]"
             />
 
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full border rounded px-4 py-3"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none focus:border-[#C84A12]"
             />
 
             <input
               type="tel"
               placeholder="Enter your phone number"
-              className="w-full border rounded px-4 py-3"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none focus:border-[#C84A12]"
             />
 
             <input
               type="password"
               placeholder="Enter your password"
-              className="w-full border rounded px-4 py-3"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none focus:border-[#C84A12]"
             />
 
             <input
               type="password"
               placeholder="Confirm your password"
-              className="w-full border rounded px-4 py-3"
+              className="w-full border border-gray-300 rounded-md p-3 outline-none focus:border-[#C84A12]"
             />
-          </div>
 
-          <div className="mt-5 flex items-center gap-2">
-            <input type="checkbox" />
-            <p className="text-sm">
+            {/* Checkbox */}
+            <label className="flex items-start gap-2 text-sm text-gray-600">
+              <input type="checkbox" className="mt-1" />
               I agree to the
-              <span className="text-orange-700 ml-1">
+              <span className="text-[#C84A12] cursor-pointer">
                 terms and conditions
               </span>
-            </p>
-          </div>
+            </label>
 
-          <button className="w-full bg-orange-700 text-white py-3 rounded mt-6 text-lg font-semibold">
-            Register
-          </button>
+            {/* Button */}
+            <button
+              type="submit"
+              className="w-full bg-[#C84A12] hover:bg-[#A93D0E] text-white font-semibold py-3 rounded-md transition"
+            >
+              Register
+            </button>
 
-          <p className="text-center mt-5 text-gray-500">
-            Already registered?
-            <span className="text-orange-700 font-semibold ml-1 cursor-pointer">
+          </form>
+
+          {/* Login Link */}
+          <p className="text-center mt-6 text-gray-600">
+            Already registered?{" "}
+            <Link
+              to="/login"
+              className="text-[#C84A12] font-semibold"
+            >
               Login here
-            </span>
+            </Link>
           </p>
+
         </div>
-      </div>
-    </div>
+      </section>
+
+      <Footer />
+    </>
   );
 }
 
