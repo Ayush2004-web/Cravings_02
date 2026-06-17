@@ -24,7 +24,6 @@ function Register() {
             Join us as a Customer, Restaurant, or Rider
           </p>
 
-          {/* User Type */}
           <div className="mb-6">
             <h3 className="font-semibold mb-4">Register as:</h3>
 
