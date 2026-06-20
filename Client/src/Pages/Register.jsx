@@ -55,7 +55,6 @@ function Register() {
             </div>
           </div>
 
-          {/* Form */}
           <form className="space-y-4">
 
             <input
@@ -88,7 +87,6 @@ function Register() {
               className="w-full border border-gray-300 rounded-md p-3 outline-none focus:border-[#C84A12]"
             />
 
-            {/* Checkbox */}
             <label className="flex items-start gap-2 text-sm text-gray-600">
               <input type="checkbox" className="mt-1" />
               I agree to the
@@ -97,7 +95,6 @@ function Register() {
               </span>
             </label>
 
-            {/* Button */}
             <button
               type="submit"
               className="w-full bg-[#C84A12] hover:bg-[#A93D0E] text-white font-semibold py-3 rounded-md transition"
@@ -107,7 +104,6 @@ function Register() {
 
           </form>
 
-          {/* Login Link */}
           <p className="text-center mt-6 text-gray-600">
             Already registered?{" "}
             <Link
